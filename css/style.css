@@ -19,8 +19,7 @@ html, body {
 }
 
 #newsVideo {
-  text-align: center;
-  float: center;
+  float: middle;
 }
 
 #videoDesc {
