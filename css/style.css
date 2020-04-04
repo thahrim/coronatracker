@@ -17,3 +17,11 @@ html, body {
 #flag {
   width: 90px;
 }
+
+#newsVideo {
+  text-align: center;
+}
+
+#videoDesc {
+  text-align: center;
+}
