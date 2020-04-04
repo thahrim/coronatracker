@@ -23,7 +23,8 @@ html, body {
 }
 
 #videoDesc {
-  background-color: rgba(0, 0, 255, 0.4);
+  background-color: rgba(0, 0, 240, 0.2);
+  padding: 5px;
 }
 
 table {
