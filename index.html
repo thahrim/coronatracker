@@ -12,64 +12,26 @@
 
   gtag('config', 'UA-49247651-6');
 </script>
-<script>
-	function setVideo(city) {
-		//document.getElementById("demo").innerHTML = city.responseText;
-		var pl;
-		var response = city.trim();
-
-		switch (response) {
-			case "Toronto":
-				pl = "PLAs1zSLtTHBTfvtHP89HpjoqoXNH9IZkF";
-				break;
-			case "British Colombia":
-				pl = "PLAs1zSLtTHBQsuq2EpU4QyDkmO9d4u_Wd";
-				break;
-			default:
-				pl = "PLAs1zSLtTHBQ0ayczij2W67zVyNpNrdGd";
-		}
-
-		var source = "https://www.youtube.com/embed/videoseries?list=" + pl;
-		document.getElementById("newsVideo").src = source;
-    document.getElementById("videoDesc").innerHTML = "COVID-19 News in "+ city;
-	}
-
-	function getCity(ip) {
-
-		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				setVideo(this.responseText);
-			}
-		}
-		xhttp.open("GET", "https://ipinfo.io/" + ip.responseText + "/city", true);
-		xhttp.send();
-	}
-
-	function getIP() {
-		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				getCity(this);
-			}
-		}
-		xhttp.open("GET", "https://api.ipify.org", true);
-		xhttp.send();
-	}
-	getIP();
-</script>
+<script src="js/tv.js"></script>
 
   </head>
   <body>
     <h1>
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" alt="Flag_of_Canada" id="flag" height="5%" style="width: 5%"/> COVID-19 Tracker </h1><p>Find more information at <a href="https://www.canada.ca/coronavirus">canada.ca/coronavirus</a></p>
     &nbsp;<style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 10px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 10px 7px 10px !important;font-size: 28px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/CoronaTrackerca"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a tea"><span style="margin-left:15px;font-size:28px !important;">Buy me a tea</span></a>
-<div class="h_iframe">
+    <table>
+      <tr>
+        <th>
+      <div class="h_iframe">
         <iframe  src="https://health-infobase.canada.ca/covid-19/iframe/map.html" frameborder="0" allowfullscreen></iframe>
     </div>
+  </th>
+  <th>
     <p id="videoDesc"></p>
     <iframe id="newsVideo" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+  </th>
+  </tr>
+  </table>
   </body>
 
 </html>
