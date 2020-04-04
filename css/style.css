@@ -20,8 +20,13 @@ html, body {
 
 #newsVideo {
   text-align: center;
+  align: center;
 }
 
 #videoDesc {
   text-align: center;
+}
+
+table {
+  width: 90%
 }
