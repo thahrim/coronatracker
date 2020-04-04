@@ -20,7 +20,7 @@ html, body {
 
 #newsVideo {
   text-align: center;
-  align: center;
+  float: center;
 }
 
 #videoDesc {
