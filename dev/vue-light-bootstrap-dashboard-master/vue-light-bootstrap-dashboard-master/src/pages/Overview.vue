@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-8">
           <card>
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1">
+            <div class="embed-responsive embed-responsive-1by1 z-depth-1 map-container">
               <iframe
                 class="embed-responsive-item"
                 src="https://health-infobase.canada.ca/covid-19/iframe/map.html"
