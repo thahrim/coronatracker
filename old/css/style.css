@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.h_iframe iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.h_iframe {
+  height: 100%;
+  width: 100%;
+}
+
+#flag {
+  width: 90px;
+}
+
+#newsVideo {
+  float: middle;
+}
+
+#videoDesc {
+  background-color: rgba(0, 0, 240, 0.2);
+  padding: 5px;
+}
+
+table {
+  width: 90%
+}

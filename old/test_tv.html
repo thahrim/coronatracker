@@ -5,26 +5,25 @@
 
 </head>
 <script>
+	function setVideo(city) {
+		//document.getElementById("demo").innerHTML = city.responseText;
+		var pl;
+		var response = city.trim();
 
-function setVideo(city) {
-	//document.getElementById("demo").innerHTML = city.responseText;
-	var pl;
-	var response = city.trim();
+		switch (response) {
+			case "Toronto":
+				pl = "PLAs1zSLtTHBTfvtHP89HpjoqoXNH9IZkF";
+				break;
+			case "British Colombia":
+				pl = "PLAs1zSLtTHBQsuq2EpU4QyDkmO9d4u_Wd";
+				break;
+			default:
+				pl = "PLAs1zSLtTHBQ0ayczij2W67zVyNpNrdGd";
+		}
 
-	switch (response) {
-		case "Toronto":
-			pl = "PLAs1zSLtTHBTfvtHP89HpjoqoXNH9IZkF";
-			break;
-		case "British Colombia":
-	 		pl = "PLAs1zSLtTHBQsuq2EpU4QyDkmO9d4u_Wd";
-			break;
-		default:
-		 pl = "PLAs1zSLtTHBQ0ayczij2W67zVyNpNrdGd";
+		var source = "https://www.youtube.com/embed/videoseries?list=" + pl;
+		document.getElementById("newsVideo").src = source;
 	}
-
-	var source = "https://www.youtube.com/embed/videoseries?list=" + pl;
-	document.getElementById("newsVideo").src = source;
-}
 
 	/*function getCity2(ip) {
 
@@ -71,9 +70,5 @@ document.getElementById("error").innerHTML = this.responseText;
 	<iframe id="newsVideo" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<p id="error"></p>
 </body>
-<script>
-
-
-</script>
 
 </html>
