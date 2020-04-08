@@ -53,21 +53,5 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   render: h => h(App),
-  router,
-  data: {
-    iframe:{
-      src: 'https://www.youtube.com/embed/v64KOxKVLVg',
-      loaded: false
-    }    
-  },
-  methods: {
-    load: function(){
-      this.iframe.loaded = true;
-    }
-  }
-})
-
-var newsObj = new Vue({
-  el: '#newsVideo',
-  data: {source : ""}
+  router
 })
