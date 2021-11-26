@@ -11,7 +11,7 @@
       <div class="copyright text-center">
         Created with
         <i class="fa fa-heart heart"></i> by
-        <a href="https://rimz.ca" target="_blank">RimZ</a>.
+        <a href="https://rimz.ca" target="_blank">RimZ</a> or <a href="http://thaharim.com" target="_blank">Thaharim</a>.
       </div>
     </div>
   </footer>

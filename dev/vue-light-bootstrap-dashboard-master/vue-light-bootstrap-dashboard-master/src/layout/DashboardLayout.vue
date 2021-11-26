@@ -8,7 +8,7 @@
       </sidebar-link>
       <sidebar-link to="#1">
         <i class="nc-icon nc-circle-09"></i>
-        <p>More</p>
+        <p>By Thaharim</p>
       </sidebar-link>
       <sidebar-link to="#2">
         <i class="nc-icon nc-notes"></i>
