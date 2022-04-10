@@ -21,8 +21,9 @@
       </sidebar-link>
 
       <template slot="bottom-links">
-           <a href="https://www.buymeacoffee.com/CoronaTrackerca" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
-      </template>
+       <i class="fa fa-heart heart"></i><a href="https://rimz.ca" target="_blank"> RimZ</a>
+      <a href="https://www.buymeacoffee.com/CoronaTrackerca" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+     </template>
     </side-bar>
     <div class="main-panel">
       <top-navbar></top-navbar>
